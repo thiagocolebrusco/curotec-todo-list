@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -22,8 +23,8 @@
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            <div id="app">
-                <example-component></example-component>
+            <div id="app" class="container">
+                <to-do-list></to-do-list>
             </div>
         </div>
 	    <script src="{{ mix('/js/app.js') }}"></script>
